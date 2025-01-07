@@ -1,0 +1,190 @@
+/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap");
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+  Remove list styles (bullets/numbers)
+  in case you use it with normalize.css
+*/
+ol, ul {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* Removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.hero .header-image {
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero .header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+}
+.hero .header-content h1 {
+  font-size: clamp(24px, 5vw, 48px);
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4.8px;
+}
+.hero .header-content h4 {
+  font-size: clamp(14px, 3vw, 22px);
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 6.82px;
+}
+.hero .header-content .search-bar {
+  margin-top: 48px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 653px;
+  height: 63xpx;
+}
+.hero .header-content .search-bar .input {
+  padding: 10px;
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: clamp(12px, 2vw, 16px);
+  line-height: 26px;
+  color: #999;
+  letter-spacing: 2.8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+.hero .header-content .search-bar .input:focus {
+  outline: none;
+}
+.hero .header-content .search-bar .btn {
+  background-color: #5474FD;
+  color: #fff;
+  width: 228px;
+  height: 63px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid #fff;
+  font-size: clamp(12px, 2vw, 14px);
+  text-transform: uppercase;
+}
+.hero .header-content .search-bar .btn:hover {
+  background-color: #4B68D7;
+}
+.hero .header-content .scroll {
+  margin-top: 108px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+}
+.hero .header-content .scroll .scroll-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: clamp(10px, 1.5vw, 14px);
+  letter-spacing: 2.8px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .hero .header-content h1 {
+    letter-spacing: 2.5px;
+  }
+  .hero .header-content .search-bar {
+    height: auto;
+  }
+}
+@media screen and (max-width: 510px) {
+  .hero .header-content h1,
+  .hero .header-content h4 {
+    text-align: center;
+  }
+  .hero .header-content .search-bar {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .hero .header-content .search-bar .input {
+    font-size: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .hero .header-content .search-bar .btn {
+    width: 100%;
+  }
+}
+
+a {
+  cursor: pointer;
+}

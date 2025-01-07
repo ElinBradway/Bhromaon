@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhromaon</title>
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+
 </head>
 <body>
+    <header class="hero">
+        <img src="Images/hero14.png" alt="Mountain landscape" class="header-image">
+        <div class="header-content">
+            <h1>Bhromaon</h1>
+            <h4>Safe Travel Anywhere</h4>
+            <form class="search-bar">
+                <input 
+                    type="text" required 
+                    placeholder="Search Your travel Destination" 
+                    class="input" 
+                    onfocus="this.placeholder=''" 
+                    onblur="this.placeholder='Search Your travel Destination'"
+                >
+                <button class="btn" type="submit">
+                    SEARCH
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            <section class="scroll">
+                <p class="scroll-text">Scroll Down <i class="fa-solid fa-angle-down"></i></p>
+            </section>
+        </div>
+    </header>
     
 </body>
 </html>

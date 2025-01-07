@@ -1,0 +1,124 @@
+.hero {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  
+    .header-image {
+      width: 100vw;
+      height: 100vh; 
+      object-fit: cover;
+    }
+  
+    .header-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: $color-white;
+      @include flex-center;
+      flex-direction: column;
+      width: 90%;
+  
+      h1 {
+        font-size: clamp(24px, 5vw, 48px);
+        font-family: $font-primary;
+        text-transform: uppercase;
+        letter-spacing: 4.8px;
+      }
+  
+      h4 {
+        font-size: clamp(14px, 3vw, 22px);
+        font-family: $font-primary;
+        letter-spacing: 6.82px;
+      }
+  
+      .search-bar {
+        margin-top: 48px;
+        background-color: $color-white;
+        @include flex-center;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        max-width: 653px;
+        height: 63xpx;
+  
+        .input {
+          padding: 10px;
+          width: 100%;
+          font-family: $font-primary;
+          font-size: clamp(12px, 2vw, 16px);
+          line-height: 26px;
+          color: #999;
+          letter-spacing: 2.8px;
+          box-sizing: border-box;
+          text-align: center;
+  
+          &:focus {
+            outline: none;
+          }
+        }
+  
+        .btn {
+          @include button($color-primary, $color-primary-dark);
+          border: 2px solid $color-white;
+          font-size: clamp(12px, 2vw, 14px);
+          text-transform: uppercase;
+        }
+      }
+  
+      .scroll {
+        margin-top: 108px;
+        @include flex-center;
+        flex-direction: column;
+        color: $color-white;
+  
+        .scroll-text {
+          font-family: $font-primary;
+          font-size: clamp(10px, 1.5vw, 14px);
+          letter-spacing: 2.8px;
+          text-align: center;
+        }
+      }
+    }
+  
+    @media screen and (max-width: 768px) {
+      .header-content {
+        h1 {
+          letter-spacing: 2.5px;
+        }
+  
+        .search-bar {
+          height: auto;
+  
+        }
+      }
+    }
+  
+    @media screen and (max-width: 510px) {
+        .header-content {
+          h1,
+          h4 {
+            text-align: center;
+          }
+      
+          .search-bar {
+            width: 90%;
+            flex-direction: column;
+            height: auto;
+      
+            .input {
+              font-size: 10px;
+              margin-bottom: 10px;
+              width: 100%;
+            }
+      
+            .btn {
+              width: 100%;
+            }
+          }
+        }
+      }
+      
+  
+    }
