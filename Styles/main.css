@@ -37,6 +37,103 @@ textarea {
   white-space: revert;
 }
 
+.navigation {
+  width: 100vw;
+  padding: 31px 10vw;
+  background: #5474FD;
+}
+.navigation .nav-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1121px;
+}
+.navigation .nav-content .brand-name {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+}
+.navigation .nav-content .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.navigation .nav-content .menu .menu-item {
+  font-family: "Aleo", serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .navigation {
+    padding: 20px 50px;
+  }
+  .navigation .nav-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .navigation .nav-content .brand-name {
+    margin-bottom: 15px;
+  }
+  .navigation .nav-content .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+  }
+  .navigation .nav-content .menu .menu-item {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navigation {
+    padding: 10px 20px;
+  }
+  .navigation .nav-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navigation .nav-content .brand-name {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .navigation .nav-content .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+  .navigation .nav-content .menu .menu-item {
+    text-align: center;
+  }
+}
+
 .hero {
   width: 100vw;
   height: 100vh;
