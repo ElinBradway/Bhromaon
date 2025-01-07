@@ -282,6 +282,280 @@ textarea {
   }
 }
 
+.value1 {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.value1-content {
+  position: absolute;
+  left: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.value1 h2 {
+  color: #fff;
+  font-size: 36px;
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 50px;
+}
+.value1 p {
+  max-width: 562px;
+  height: auto;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 1.6px;
+  word-wrap: break-word;
+}
+.value1 button {
+  background-color: #5474FD;
+  color: #fff;
+  width: 228px;
+  height: 63px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 45px;
+}
+.value1 button:hover {
+  background-color: #4B68D7;
+}
+.value1 img {
+  width: 100vw;
+  height: 70vh;
+}
+@media (max-width: 768px) {
+  .value1-content {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+  }
+  .value1 h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .value1 p {
+    font-size: 14px;
+    max-width: 100%;
+    line-height: 22px;
+  }
+  .value1 button {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .value1-content {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    text-align: center;
+    width: 90%;
+  }
+  .value1 h2 {
+    margin-bottom: 20px;
+  }
+  .value1 p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .value1 button {
+    margin-top: 20px;
+  }
+}
+
+.value1-icons {
+  width: 100%;
+  height: 340px;
+  background-color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.value1-icons .value1-iconcontent {
+  width: 1046px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.value1-icons .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+  font-size: 36px;
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  line-height: 26px;
+}
+.value1-icons .card i {
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+.value1-icons .card i.drkblue {
+  color: #5474FD;
+}
+.value1-icons .card i.red {
+  color: #FF6363;
+}
+.value1-icons .card i.lghblue {
+  color: #00A2FF;
+}
+
+.footer {
+  width: 100%;
+  height: 270px;
+  background: #232323;
+  color: #fff;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer .footer-container h5 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+}
+.footer .footer-container h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  margin-top: 8px;
+}
+.footer .footer-container .icons {
+  width: 166px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+.footer .footer-container .icons a {
+  cursor: pointer;
+}
+.footer .footer-container .icons a .fa-linkedin {
+  color: #5474FD;
+}
+.footer .footer-container .icons a:hover .fa-linkedin {
+  color: #0099e8;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    height: auto;
+    padding: 20px 0;
+  }
+  .footer-container h5 {
+    font-size: 16px;
+  }
+  .footer-container h4 {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .footer-container .icons {
+    width: 100px;
+    gap: 5px;
+  }
+  .footer-container .icons a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer-container h5 {
+    font-size: 14px;
+  }
+  .footer-container h4 {
+    font-size: 14px;
+  }
+  .footer-container .icons {
+    width: 80px;
+    gap: 4px;
+  }
+  .footer-container .icons a {
+    font-size: 12px;
+  }
+}
 a {
   cursor: pointer;
 }
